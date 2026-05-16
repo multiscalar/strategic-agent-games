@@ -31,6 +31,10 @@ _DEFAULT_GAME_PARAMS: dict[str, dict[str, Any]] = {
     "first-price-auction": {"rv1": 30, "rv2": 30},
     "bilateral-trade": {"buyer_rv": 80, "seller_rv": 40},
     "provision-point": {"threshold": 100, "rv1": 70, "rv2": 70},
+    "all-pay-auction": {"rv1": 50, "rv2": 50},
+    "hold-up": {"max_rounds": 10, "investment_cost": 1.0, "surplus_base": 0.0, "surplus_multiplier": 3.0},
+    "war-of-attrition": {"max_rounds": 10, "cost_rate": 1.0, "prize": 10.0, "max_time": 10.0},
+    "dutch-auction": {"max_rounds": 10, "start_price": 100.0, "decrement": 5.0, "min_price": 0.0, "rv1": 80.0, "rv2": 65.0}
 }
 
 def build_arena_app(
